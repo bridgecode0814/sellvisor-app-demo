@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- 모바일 필수 viewport -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+
+    <!-- iOS Safari 홈 화면 추가 시 전체 화면 앱처럼 동작 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="셀바이저" />
+
+    <!-- 안드로이드 Chrome 주소창 색상 -->
+    <meta name="theme-color" content="#1B64DA" />
+
+    <!-- 전화번호 자동 하이퍼링크 방지 (전화번호 형식 텍스트가 많음) -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>셀바이저 가맹점주 (데모)</title>
+
+    <style>
+      /* 모바일 기본 초기화 */
+      * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+      html, body {
+        margin: 0; padding: 0;
+        background: #F6F8FB;
+        overscroll-behavior-y: contain;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+                     "Noto Sans KR", Roboto, "Segoe UI", sans-serif;
+        color: #1A2236;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      #root {
+        min-height: 100vh;
+        min-height: 100dvh;   /* iOS Safari 주소창 고려 */
+      }
+      /* 버튼 기본 스타일 초기화 */
+      button {
+        font-family: inherit;
+        -webkit-appearance: none;
+        appearance: none;
+      }
+      /* input 모바일 줌 방지 (16px 이상) */
+      input, textarea, select {
+        font-size: 16px;
+        font-family: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
